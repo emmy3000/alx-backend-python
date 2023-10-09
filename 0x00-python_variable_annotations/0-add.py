@@ -18,4 +18,3 @@ def add(a: float, b: float) -> float:
         float: The sum of 'a' and 'b' as a floating-point number.
     """
     return a + b
-

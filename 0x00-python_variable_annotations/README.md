@@ -4,6 +4,7 @@
 
 In Python 3, variable annotations offer a powerful way to enhance code readability and maintainability. By explicitly specifying variable types using type annotations, you can make your code more self-explanatory and help catch potential type-related errors early. This README provides an overview of key concepts related to variable annotations in Python.
 
+
 ## Table of Contents
 
 1. [Type Annotations in Python 3](#1-type-annotations-in-python-3)

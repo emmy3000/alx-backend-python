@@ -1,6 +1,6 @@
 # ALX Backend Python
 
-Welcome to the ALX Backend Python repository! This space is dedicated to tackling advanced challenges and implementing solutions using the Python programming language, primarily focusing on backend frameworks and business logic.
+Welcome to the ALX Backend Python repository! This space is dedicated to tackling intermediate to advanced challenges and implementing solutions using the Python programming language, primarily focusing on backend frameworks and business logic.
 
 ## General Requirements
 

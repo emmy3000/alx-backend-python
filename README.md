@@ -6,17 +6,17 @@ Welcome to the ALX Backend Python repository! This space is dedicated to tacklin
 
 Before diving into this repository, it's essential to adhere to the following guidelines:
 
-- **Editors:** You are encouraged to use <kbd>vi<kbd>, <kbd>vim<kbd>, or <kbd>emacs<kbd> as your code editors.
+- **Editors:** You are encouraged to use <kbd>vi</kbd>, <kbd>vim</kbd>, or <kbd>emacs</kbd> as your code editors.
 
-- **Python Version:** All code will be interpreted/compiled on Ubuntu 18.04 LTS using <kbd>Python 3.7<kbd>.
+- **Python Version:** All code will be interpreted/compiled on Ubuntu 18.04 LTS using <kbd>Python 3.7</kbd>.
 
 - **File Endings:** Ensure that all your files end with a new line.
 
 - **Shebang Line:** The first line of every file should be exactly `#!/usr/bin/env python3`.
 
-- **README.md:** A mandatory <kbd>README.md<kbd> file should be present at the root of your project folder.
+- **README.md:** A mandatory <kbd>README.md</kbd> file should be present at the root of your project folder.
 
-- **Coding Style:** Your code should adhere to the <kbd>pycodestyle<kbd> style (version 2.5).
+- **Coding Style:** Your code should adhere to the <kbd>pycodestyle</kbd> style (version 2.5).
 
 - **Executable Files:** All your files must be executable.
 

@@ -14,7 +14,7 @@ Before diving into this repository, it's essential to adhere to the following gu
 
 - **Shebang Line:** The first line of every file should be exactly `#!/usr/bin/env python3`.
 
-- **README.md:** A mandatory <kbd>README.md</kbd> file should be present at the root of your project folder.
+- **Project Doc:** A mandatory `README.md` file should be present at the root of your project folder.
 
 - **Coding Style:** Your code should adhere to the <kbd>pycodestyle</kbd> style (version 2.5).
 

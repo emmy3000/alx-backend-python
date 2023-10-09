@@ -7,7 +7,7 @@ This script defines a function to zoom in on an array.
 from typing import Tuple, List
 
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
     """
     Zoom in on an array by repeating its elements.
 

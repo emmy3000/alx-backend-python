@@ -69,6 +69,3 @@ random_number = random.randint(1, 100)
 You can use these random numbers in your async programs as needed.
 
 This README documentation offers a concise overview of asynchronous programming in Python, covering syntax, execution, concurrency, and the usage of the `random` module. Utilize these concepts to write efficient and responsive async code in Python.
-
-
-

@@ -9,27 +9,16 @@ import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int):
+def task_wait_random(max_delay: int) -> asyncio.Task:
     '''
     Create an asyncio.Task for the wait_random coroutine
     with the given max_delay.
 
     Args:
         max_delay (int): The maximum delay in seconds.
+
+    Returns:
+        async.Task: An asyncio task that waits for a random delay.
     '''
-    return asyncio.create_task(wait_random(max_delay))
-
-
-async def test(max_delay: int):
-    '''
-    Test the task_wait_random function by creating an asyncio.
-    Future with the specified max_delay.
-
-    Args:
-        max_delay (int): The maximum delay in seconds.
-    '''
-    task = task_wait_random(max_delay)
-    await task
-    print(task.__class__)
-
-asyncio.run(test(5))
+    random_delay_task = asyncio.create_task(wait_random(max_delay))
+    return random_delay_task 

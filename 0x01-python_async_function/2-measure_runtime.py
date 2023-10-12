@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-'''
+"""
 Measure the runtime of wait_n coroutine.
-'''
+"""
 import time
 import asyncio
 import random
@@ -13,7 +13,7 @@ wait_n = concurrent_coroutines.wait_n
 
 
 async def wait_random(max_delay: Union[int, float] = 10) -> float:
-    '''
+    """
     Asynchronous coroutine that waits for a random delay
     between 0 and max_delay seconds (inclusive).
 
@@ -23,7 +23,7 @@ async def wait_random(max_delay: Union[int, float] = 10) -> float:
 
     Returns:
         float: The random delay.
-    '''
+    """
     if max_delay < 0:
         raise ValueError("max_delay must be a non-negative number")
 
@@ -33,7 +33,7 @@ async def wait_random(max_delay: Union[int, float] = 10) -> float:
 
 
 def measure_time(n: int, max_delay: int) -> float:
-    '''
+    """
     Measure the total execution time for wait_n(n, max_delay)
     and return total_time / n.
 
@@ -43,7 +43,7 @@ def measure_time(n: int, max_delay: int) -> float:
 
     Returns:
         float: The average execution time for wait_n.
-    '''
+    """
     start_time = time.time()
     asyncio.run(wait_n(n, max_delay))
     end_time = time.time()

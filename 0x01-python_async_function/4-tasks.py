@@ -3,7 +3,6 @@
 Create asyncio.Tasks for the wait_random coroutine
 multiple times concurrently.
 """
-
 import asyncio
 from typing import List
 
@@ -26,11 +25,15 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     if n < 0:
         raise ValueError("n must be a non-negative integer")
 
-    tasks = [task_wait_random(max_delay) for _ in range(n)]
-
+    tasks = []
     delays = []
-    for completed_task in asyncio.as_completed(tasks):
-        delay = await completed_task
+
+    for i in range(n):
+        task = task_wait_random(max_delay)
+        tasks.append(task)
+
+    for task in asyncio.as_completed((tasks)):
+        delay = await task
         delays.append(delay)
 
     return delays

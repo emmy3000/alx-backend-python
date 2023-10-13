@@ -7,6 +7,7 @@ that generatesa list of random numbers between 0 and 10
 using the async generator.
 """
 import asyncio
+import random
 from typing import List
 
 async_generator = __import__('0-async_generator').async_generator

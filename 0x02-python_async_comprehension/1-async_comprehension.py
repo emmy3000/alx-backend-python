@@ -3,11 +3,9 @@
 Async Comprehension
 
 This module defines an asynchronous comprehension function
-that generatesa list of random numbers between 0 and 10
-using the async generator.
+that generatesa list of random numbers between 0 and 10.
 """
 import asyncio
-import random
 from typing import List
 
 async_generator = __import__('0-async_generator').async_generator
@@ -15,9 +13,9 @@ async_generator = __import__('0-async_generator').async_generator
 
 async def async_comprehension() -> List[float]:
     """
-    Asynchronous comprehension function that generates
+    Asynchronous comprehension function generates
     a list of random numbers between 0 and 10
-    using the async generator.
+    using an imported async generator function.
 
     Returns:
         List[float]: A list of random numbers between 0 and 10.

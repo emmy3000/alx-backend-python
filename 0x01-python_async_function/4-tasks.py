@@ -1,4 +1,4 @@
-# !/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Create asyncio.Tasks for the wait_random coroutine
 multiple times concurrently.
@@ -25,15 +25,11 @@ async def task_wait_n(n: int, max_delay: int) -> List[float]:
     if n < 0:
         raise ValueError("n must be a non-negative integer")
 
-    tasks = []
+    tasks = [task_wait_random(max_delay) for _ in range(n)]
+
     delays = []
-
-    for i in range(n):
-        task = task_wait_random(max_delay)
-        tasks.append(task)
-
-    for task in asyncio.as_completed((tasks)):
-        delay = await task
+    for completed_task in asyncio.as_completed(tasks):
+        delay = await completed_task
         delays.append(delay)
 
     return delays
